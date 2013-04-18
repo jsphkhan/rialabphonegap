@@ -1,6 +1,6 @@
 window.canvasplugin = function(canvasEl,callback){
 	var canvasProps = {
-		mimeType: "image/png",
+		mimeType: "image/png", //this is hard coded right now, change it as per your need
 		xpos: canvasEl.offsetLeft,
 		ypos: canvasEl.offsetTop,
 		width: canvasEl.width,
