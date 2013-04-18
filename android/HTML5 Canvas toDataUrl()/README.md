@@ -13,17 +13,17 @@ base64 encoded string of the HTML5 Canvas image. You can use this plugin with th
 Find the complete tutorial and instructions in this [blog post](http://jbkflex.wordpress.com/2012/12/21/html5-canvas-todataurl-support-for-android-devices-working-phonegap-2-2-0-plugin/).
 
 Note: The plugin was specifically developed for Phoengap 2.2.0. I have not tested it with higher versions of Phonegap. But
-it should work. Although you may want to check the official documentation for any changes to the plugin architecture. 
+it should work. Although you may want to check the official documentation for any changes to the Phonegap plugin architecture. 
 
 ###Adding the plugin to your project
 
-1)  Add the CanvasPlugin.js file inside assets/www/ folder and provide a reference to it in your index.html file, like this
+1) Copy the CanvasPlugin.js file inside assets/www/ folder and provide a reference to it in your index.html file, like this
 
 ```
 <script type="text/javascript" charset="utf-8" src="CanvasPlugin.js"></script>
 ```
 
-2) Add the CanvasPlugin.java file. Create a directory inside your project’s src folder that matches the package name of CanvasPlugin.java class. 
+2) Copy the CanvasPlugin.java file. Create a directory inside your project’s src folder that matches the package name of CanvasPlugin.java class. 
 For our case make a directory – /org/apache/cordova/plugin inside src and then paste CanvasPlugin.java inside it. If 
 you change the package name, make sure to change the directory structure as well. The package name can be found at the 
 top of CanvasPlugin.java file.
