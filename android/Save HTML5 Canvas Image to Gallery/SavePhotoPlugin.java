@@ -3,6 +3,8 @@
  * with MIME Types jpeg or png. After successfull saving it calls the Media Scanner
  * to scan for the new photo and make it available in the gallery .
  * Returns - the path of the saved file to javascript
+ * Uses code from my plugin - HTML5 Canvas toDataURL - http://jbkflex.wordpress.com/2012/12/21/html5-canvas-todataurl-support-for-android-devices-working-phonegap-2-2-0-plugin/
+ * Thanks to Ryan Gillespie http://ryangillespie.com and Jared Sheets.
  */
 package org.apache.cordova.plugin;
 
@@ -131,17 +133,18 @@ public class SavePhotoPlugin extends CordovaPlugin {
 		            + fromInt(c.get(Calendar.SECOND));
 		
 			//Double f = Double.valueOf(appVersion); //convert android version to double float type			
-			int check = appVersion.compareTo("2.3.3"); //if 1, then Android version is > 2.3.3, if 0 or -1 then Android version is 2.3.3 or lesser
-			System.out.println("###################$$$$$$$$$$ Check: " + check);
+			int check = appVersion.compareTo("2.3.3"); //if 1 or greater, then Android version is > 2.3.3, if 0 or -1 then Android version is 2.3.3 or lesser
+			//System.out.println("###################$$$$$$$$$$ Check: " + check);
 			
-			if(check >= 1){ //for Android > 2.3 For eg. 2.3 or higher
-				System.out.println("$$$$$$$$$$ Greater");
+			if(check >= 1){ //for Android > 2.3 For eg. 2.3 or higher				
+				//this throws error in Android 2.2, hence I have a corresponding else block
 				File path = Environment.getExternalStoragePublicDirectory(
 						Environment.DIRECTORY_PICTURES
-				); //this throws error in Android 2.2
+				); 
 				imageFileName = new File(path, date.toString() + ".jpg"); 
+				//System.out.println("$$$$$$$$$$ Greater: " + path);
 			}else{ //for Android = 2.3.3 or lesser
-				System.out.println("$$$$$$$$$$ Lesser");				
+				//System.out.println("$$$$$$$$$$ Lesser");				
 				imageFileName = new File(Environment.getExternalStorageDirectory(), date.toString() + ".jpg"); 	
 			}
 			
