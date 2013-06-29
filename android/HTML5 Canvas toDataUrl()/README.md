@@ -60,11 +60,11 @@ HTML image tag and you can get a preview image of your canvas.
  reference, as the third parameter.
 
 
-###License
+##License
 
 ###The MIT License (MIT)
 
-Copyright (c) 2013 Joseph Khan
+Copyright (c) 2013 Joseph Khan [http://jbkflex.wordpress.com](http://jbkflex.wordpress.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
