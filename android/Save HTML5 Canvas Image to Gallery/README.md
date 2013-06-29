@@ -7,11 +7,11 @@ ReadMe file under construction.
 Till then you can see all the details in my blog post: http://jbkflex.wordpress.com/2013/06/19/save-html5-canvas-image-to-gallery-phonegap-android-plugin/
 
 
-###License
+##License
 
 ###The MIT License (MIT)
 
-Copyright (c) 2013 Joseph Khan
+Copyright (c) 2013 Joseph Khan [http://jbkflex.wordpress.com](http://jbkflex.wordpress.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
