@@ -1,10 +1,10 @@
-# HTML5 Canvas – toDataURL() plugin for Android 
+# HTML5 Canvas toDataURL() - Base64 encoded data string Phonegap Android plugin
 
 by [Joseph](http://jbkflex.wordpress.com).
 
 Modified from the original plugin by [Ryan Gillespie](http://ryangillespie.com/phonegap.php).
 
-For older Android devices, 2.2 , 2.3(in general Android < 4.0) the native HTML5 Canvas- toDataURL() function 
+For older Android devices, 2.2 , 2.3(in general Android < 4.0) the native HTML5 Canvas- toDataURL() function (that gives a base64 encoded image data)
 does not work.  That means older Android web-kits (a Phonegap app runs on the Android webview which is actually the webkit browser
 inside a native wrapper) does not support the native method of converting a HTML5 Canvas to an image (.png or .jpeg) through toDataURL() 
 generated base64 encoded strings. This plugin enables you add functionality for older Android devices and provides a 
